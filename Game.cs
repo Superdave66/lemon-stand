@@ -8,5 +8,6 @@ namespace lemonade_stand1
 {
     class Game
     {
+        public double wallet;
     }
 }

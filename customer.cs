@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lemonade_stand1
 {
-    class Customer
+    class Customer: Day
     {
     }
 }

@@ -8,16 +8,13 @@ namespace lemonade_stand1
 {
     class Player
     {
-        public double wallet;
-        public void GoTOStore()
-        {
-
-        }
-        public Player(wallet) { }
-        
-             wallet+40;
-        
+        public Boolean icemachine;
+        public int lemons;
+        public int cups;
+        public int cupsofsugar;
+       
     }
+       
 
     
 }

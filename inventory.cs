@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace lemonade_stand1
 {
-    class Inventory
+    class Inventory: Player
     {
-        public Boolean icemachinerented;
-        public int lemons;
-        public int cups;
-        public int cupsofsugar;
+        
 
 
     }
