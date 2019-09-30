@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace lemonade_stand1
 {
-    class player
+    class Player
     {
+        public double wallet;
+        public void GoTOStore()
+        {
+
+        }
+        public Player(wallet) { }
+        
+             wallet+40;
+        
     }
+
+    
 }
+   
