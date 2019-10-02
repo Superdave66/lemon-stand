@@ -13,20 +13,22 @@ namespace lemonade_stand1
         public Pitcher pitcher;
         public double businessProfits;
         public string name;
-        public inventory inventory;
-
-        public Player() { }
-            private void GetPlayersName()
+        public Inventory inventory;
+        
+        public Player() {  }
+            public void GetPlayersName()
             {
                 Console.WriteLine("What is your name?");
-                name = Console.ReadLine();
+                name =  Console.ReadLine();
+                Console.Write(name);
+                   
             }
-        private void GetStartingCash()
+        public void GetStartingCash()
         {
-            int  startingCash = 22;
-           wallet =  startingCash; 
+            int startingCash = 22;
+            wallet.money = startingCash;
         }
-        
+
 
 
     }

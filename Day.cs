@@ -11,6 +11,12 @@ namespace lemonade_stand1
         public Weather weather;
         public List<Customer> customers;
 
+        public void UpdateRecipe()
+        {
+            
+
+
+        }
 
     }
 }
