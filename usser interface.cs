@@ -8,5 +8,6 @@ namespace lemonade_stand1
 {
   static  class UserInterface
     {
+        
     }
 }

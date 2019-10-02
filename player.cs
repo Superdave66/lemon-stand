@@ -16,16 +16,18 @@ namespace lemonade_stand1
         public inventory inventory;
 
         public Player() { }
-            public void GetPlayersName()
+            private void GetPlayersName()
             {
                 Console.WriteLine("What is your name?");
                 name = Console.ReadLine();
             }
-            public void GetStartingCash()
+        private void GetStartingCash()
         {
-
+            int  startingCash = 22;
+           wallet =  startingCash; 
         }
         
+
 
     }
 
