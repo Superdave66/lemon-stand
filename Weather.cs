@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace lemonade_stand1
 {
-    class Weather: Day
+    class Weather
     {
+        public string condition;
+        public int Temperature;
+        private List<string> weatherConditions;
+        public string predictedForcast;
     }
 }

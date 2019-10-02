@@ -8,14 +8,28 @@ namespace lemonade_stand1
 {
     class Player
     {
-        public Boolean icemachine;
-        public int lemons;
-        public int cups;
-        public int cupsofsugar;
-       
-    }
-       
+        public Wallet wallet;
+        public Recipe recipe;
+        public Pitcher pitcher;
+        public double businessProfits;
+        public string name;
+        public inventory inventory;
 
-    
+        public Player() { }
+            public void GetPlayersName()
+            {
+                Console.WriteLine("What is your name?");
+                name = Console.ReadLine();
+            }
+            public void GetStartingCash()
+        {
+
+        }
+        
+
+    }
+
+
+
 }
    
