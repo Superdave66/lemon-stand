@@ -8,12 +8,12 @@ namespace lemonade_stand1
 {
     class Player
     {
-        public Wallet wallet;
-        public Recipe recipe;
-        public Pitcher pitcher;
+        public Wallet wallet= new Wallet();
+        public Recipe recipe= new Recipe();
+        public Pitcher pitcher= new Pitcher();
         public double businessProfits;
         public string name;
-        public Inventory inventory;
+        public Inventory inventory= new Inventory();
         
         public Player() {  }
             public void GetPlayersName()
@@ -21,15 +21,17 @@ namespace lemonade_stand1
                 Console.WriteLine("What is your name?");
                 name =  Console.ReadLine();
                 Console.Write(name);
-                   
+                    
             }
         public void GetStartingCash()
         {
             int startingCash = 22;
-            wallet.money = startingCash;
+            wallet.money += startingCash;
+            Console.Write(wallet.money);
         }
 
-
+        
+        
 
     }
 

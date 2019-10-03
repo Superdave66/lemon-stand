@@ -11,14 +11,8 @@ namespace lemonade_stand1
         Player player; 
         public string createdPlayer;
        public List<Day> days;
-        public void RunGame()
-        {
-            CreateAPLayer();
-            //player.CreateRecipe();
-
-
-        }
-        public void CreateAPLayer()
+       
+        public void CreateAPlayer()
         {
             Console.WriteLine("type 1 to create your player");
            createdPlayer= Console.ReadLine();    
@@ -30,10 +24,19 @@ namespace lemonade_stand1
             else
             {
                 Console.WriteLine("you did not type 1 please type 1 to create your player");
-                CreateAPLayer();
+                CreateAPlayer();
             }
 
          }
+        public void RunGame()
+        {
+            CreateAPlayer();
+            player.GetPlayersName();
+            player.GetStartingCash();
+
+
+
+        }
     }  
 }
        
