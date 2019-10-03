@@ -16,7 +16,7 @@ namespace lemonade_stand1
         {
 
             CreateAPlayer();
-            
+            CreateAStore();
         }
 
         public void CreateAPlayer()
@@ -38,13 +38,13 @@ namespace lemonade_stand1
          }
          public void CreateAStore()
         {
-              store = new Store();
+              store = new Store(this. player);
         }
 
         public void RunGame()
         {
-            CreateAStore();
-            store.BuyCups( player);
+            
+            
 
 
         }
