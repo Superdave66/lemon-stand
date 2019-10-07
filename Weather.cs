@@ -22,7 +22,7 @@ namespace lemonade_stand1
            
             foreach (string condition in weatherConditions)
             {
-                
+                Console.WriteLine(condition);
             }
 
             

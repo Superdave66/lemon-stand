@@ -58,10 +58,14 @@ namespace lemonade_stand1
             }
             foreach (Day day in days)
             {
-
+                
             }
-             
             
+            
+        }
+        public void CreateWeather()
+        {
+            //if()
         }
         public void RunGame(Inventory inventory)
         {
