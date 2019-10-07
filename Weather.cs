@@ -18,13 +18,14 @@ namespace lemonade_stand1
 
         public void WeatherConditions()
         {
-            weatherConditions = new List<string>();
-            weatherConditions.Add("sunny");
-            weatherConditions.Add("Rainy");
-            foreach (Weather condition in weatherConditions)
+            weatherConditions = new List <Weather>("Sunny, Rainy" );
+           
+            foreach (string condition in weatherConditions)
             {
                 
             }
+
+            
         }
 
 
