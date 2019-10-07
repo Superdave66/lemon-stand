@@ -12,14 +12,20 @@ namespace lemonade_stand1
         public string createdPlayer;
        public List<Day> days;
         public Store store;
+        
         public Game ()
         {
-
             CreateAPlayer();
             CreateAStore();
+            CreateNumberOfDays();
+
+
+
+
+
         }
 
-        public void CreateAPlayer()
+        public void CreateAPlayer( )
         {
             Console.WriteLine("type 1 to create your player");
            createdPlayer= Console.ReadLine();    
@@ -36,16 +42,34 @@ namespace lemonade_stand1
             }
 
          }
-         public void CreateAStore()
+         public void CreateAStore( )
         {
-              store = new Store(this. player);
+              store = new Store( this. player);
         }
-
-        public void RunGame()
+        public void CreateNumberOfDays()
         {
-            
-            
+            Console.WriteLine("how many days would you like to play?");
+            int x = int.Parse(Console.ReadLine());
+            days = new List<Day>();
+            for (int i =0; i <x; i++)
+            {
+                Day day = new Day();
+                days.Add(day);
+            }
+            foreach (Day day in days)
+            {
 
+            }
+             
+            
+        }
+        public void RunGame(Inventory inventory)
+        {
+            CreateNumberOfDays();
+            player.CreateARecipe(inventory);
+
+
+           
 
         }
     }  

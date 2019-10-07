@@ -8,21 +8,29 @@ namespace lemonade_stand1
 {
     class Player
     {
-        public Wallet wallet = new Wallet() ;
-        public Recipe recipe  = new Recipe();
-        public Pitcher pitcher= new Pitcher();
+        public Wallet wallet;
+        public Recipe recipe;
+      
         public double businessProfits;
         public string name;
-        public Inventory inventory= new Inventory();
+        public Inventory inventory;
         
             
         public Player()
-        {
-           GetPlayersName();
-           GetStartingCash();
-           
-          
-        }
+        {                       
+            GetPlayersName();
+           this. inventory = new Inventory();
+            this.wallet = new Wallet();
+            GetStartingCash();
+            
+            
+            
+            
+            
+
+
+
+    }
             public void GetPlayersName()
             {
                 Console.WriteLine("What is your name?");
@@ -32,13 +40,28 @@ namespace lemonade_stand1
             }
         public void GetStartingCash()
         {
-            int startingCash = 22;
+            int startingCash = 1;
             wallet.money += startingCash;
             Console.WriteLine(wallet.money + " " + "this is how much you have to spend");
         }
 
         
+        public void CreateARecipe(Inventory inventory)
+        {
+            recipe = new Recipe(inventory);
+        }
+        public void EndGame(Game game)
+        { 
+            game.RunGame(inventory );
+        }
         
+        
+        
+
+       
+
+
+
 
     }
 
