@@ -21,7 +21,7 @@ namespace lemonade_stand1
         public bool CreateCustomer1(Weather weather ,Player player)
         {
             customer1 = new Customer( weather );
-            if (weather.condition == sunny && weather.temperature >= 70)
+            if (weather.condition == Sunny && weather.temperature >= 70)
             {
                 if (player.recipe.pricePerCup < .50)
                 {
@@ -34,7 +34,7 @@ namespace lemonade_stand1
                 }
             }
 
-           else  if (weather.condition == rainy && weather.temperature >= 70)
+           else  if (weather.condition == Rainy && weather.temperature >= 70)
             {
                 if (player.recipe.pricePerCup < .20)
                     return true;

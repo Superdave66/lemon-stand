@@ -25,7 +25,7 @@ namespace lemonade_stand1
 
         }
 
-        public void CreateAPlayer( )
+        public void CreateAPlayer( ) /*this is a method that does 1 thing*/
         {
             Console.WriteLine("type 1 to create your player");
            createdPlayer= Console.ReadLine();    
@@ -46,7 +46,7 @@ namespace lemonade_stand1
         {
               store = new Store( this. player);
         }
-        public void CreateNumberOfDays()
+        public void CreateNumberOfDays() /*this allows for you to have more then just 7 days */ /*so open*/ 
         {
             Console.WriteLine("how many days would you like to play?");
             int x = int.Parse(Console.ReadLine());
@@ -58,15 +58,14 @@ namespace lemonade_stand1
             }
             foreach (Day day in days)
             {
-                
+                Console.WriteLine(day);
             }
             
             
         }
-        public void CreateWeather()
-        {
-            //if()
-        }
+        //public void CreateWeather(Day day,  )
+        //{
+        //    if (         }
         public void RunGame(Inventory inventory)
         {
             CreateNumberOfDays();
